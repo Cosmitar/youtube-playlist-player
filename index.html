@@ -70,7 +70,13 @@
 </head>
 <body>
     <div id="appContainer"></div>
-    <script src="./libs/youtube-wrapper/app.js"></script>
-    <script src="./dist/bundle.js"></script>
+    <script>
+        OnGoogleAPILoadCallback() {
+            var s = document.createElement("script");
+            s.type = "text/javascript";
+            s.src = "./dist/bundle.js";
+            document.body.append(s);
+        }
+    </script>
 </body>
 </html>
