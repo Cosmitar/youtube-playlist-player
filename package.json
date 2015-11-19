@@ -1,0 +1,40 @@
+{
+  "name": "youtube-playlist-player",
+  "version": "0.1.0",
+  "description": "ReactJS component to autoplay a YouTube video paylist",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Cosmitar/youtube-playlist-player"
+  },
+  "devDependencies": {
+    "babel-core": "^5.4.5",
+    "babel-eslint": "^3.1.6",
+    "babel-loader": "^5.0.0",
+    "eslint": "^0.21.2",
+    "eslint-plugin-react": "^2.3.0",
+    "react-hot-loader": "^1.1.5",
+    "webpack": "^1.8.4",
+    "webpack-dev-server": "^1.8.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "build": "./node_modules/.bin/webpack --config webpack.config.production.js",
+    "lint": "./node_modules/.bin/eslint ."
+  },
+  "dependencies": {
+    "react": "^0.14.2",
+    "react-dom": "^0.14.2",
+    "react-youtube": "^4.1.2",
+    "babel-runtime": "^5.1.10"
+  },
+  "author": "@Cosmitar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cosmitar/youtube-playlist-player/issues"
+  },
+  "homepage": "https://github.com/Cosmitar/youtube-playlist-player"
+}
