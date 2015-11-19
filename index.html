@@ -5,7 +5,6 @@
     <title>Youtube Playlist Player</title>
     <!--link rel="stylesheet" type="text/css" href="style/main.css" /-->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <script src="https://apis.google.com/js/client.js?onload=OnGoogleAPILoadCallback"></script>
     <style>
         html, body {
             margin: 0;
@@ -71,12 +70,13 @@
 <body>
     <div id="appContainer"></div>
     <script>
-        function OnGoogleAPILoadCallback() {
+        window.OnGoogleAPILoadCallback = function () {
             var s = document.createElement("script");
             s.type = "text/javascript";
             s.src = "./dist/bundle.js";
             document.body.append(s);
         }
     </script>
+    <script src="https://apis.google.com/js/client.js?onload=OnGoogleAPILoadCallback"></script>
 </body>
 </html>
