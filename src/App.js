@@ -7,7 +7,7 @@ import {Config,Video} from 'youtube-client-wrapper';
 
 let bootYoutubeClient = ()=>{
     return Config.set({
-                apiKey: 'AIzaSyB8_0tIV6QuSA5Qb1zx3kXW8UAB-cATQXU'
+                apiKey: ''
             })
             .boot();
 }
